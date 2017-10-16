@@ -1,0 +1,6 @@
+framework module Pods_The_Tasty_LabUITests {
+  umbrella header "Pods-The Tasty LabUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
