@@ -8,8 +8,10 @@
 
 import UIKit
 
-class SingleViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class SingleViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIDropInteractionDelegate {
 
+    
+    var customView: UIView = UIView()
     
     let foodImages = ["food_one","food_two","food_three","food_four"]
     let foodNames = ["Korean food 1", "Korean food 2", "Korean food 3", "Korean food 4"]
@@ -30,15 +32,30 @@ class SingleViewController: UIViewController, UITableViewDataSource, UITableView
         
     }
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.addCustomView()
+        
 
         // Do any additional setup after loading the view.
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func addCustomView(){
+        customView.frame = CGRect(x: view.frame.minX, y: view.frame.maxY-100, width: view.frame.maxX, height: 50)
+        customView.backgroundColor = UIColor.black
+
+        self.view.addSubview(customView)
+    
+        
     }
     
 

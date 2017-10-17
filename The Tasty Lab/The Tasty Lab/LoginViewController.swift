@@ -60,11 +60,6 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignIn
         
         
         txtUsername.backgroundColor = UIColor.white
-        
-        
-        
-        
-        
         txtPassword.backgroundColor = UIColor.white
         
         

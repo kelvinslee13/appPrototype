@@ -27,6 +27,7 @@
 		F242BF8F1F6FF4D400351E62 /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F242BF8E1F6FF4D400351E62 /* SingleViewController.swift */; };
 		F242BF911F6FF50200351E62 /* SetMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F242BF901F6FF50200351E62 /* SetMenuViewController.swift */; };
 		F2730E8E1F711BE70018488B /* SingleViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2730E8D1F711BE60018488B /* SingleViewControllerTableViewCell.swift */; };
+		F2F494AE1F94B337007D3D5A /* SignupComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F494AD1F94B337007D3D5A /* SignupComplete.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		F242BF901F6FF50200351E62 /* SetMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetMenuViewController.swift; sourceTree = "<group>"; };
 		F2730E8D1F711BE60018488B /* SingleViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		F2A7CAE51F7A5AB90095A830 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		F2F494AD1F94B337007D3D5A /* SignupComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupComplete.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				F201B23B1F738E9A0076ABAC /* GoogleService-Info.plist */,
 				F201B2421F73C2880076ABAC /* SendCodeViewController.swift */,
 				F201B2401F73C1BD0076ABAC /* VertificationViewController.swift */,
+				F2F494AD1F94B337007D3D5A /* SignupComplete.swift */,
 			);
 			path = "The Tasty Lab";
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 				F242BF521F6FAFD300351E62 /* AppDelegate.swift in Sources */,
 				F242BF851F6FB0D100351E62 /* SWRevealViewController.m in Sources */,
 				F201B2431F73C2880076ABAC /* SendCodeViewController.swift in Sources */,
+				F2F494AE1F94B337007D3D5A /* SignupComplete.swift in Sources */,
 				F242BF8D1F6FE7D300351E62 /* TabBarController.swift in Sources */,
 				F242BF871F6FB4D800351E62 /* MenuViewController.swift in Sources */,
 				F2730E8E1F711BE70018488B /* SingleViewControllerTableViewCell.swift in Sources */,

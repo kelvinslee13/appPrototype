@@ -44,6 +44,11 @@ class SendCodeViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         // Do any additional setup after loading the view.
     }
 
+    
+
+    @IBAction func signUp(_ sender: Any) {
+        self.performSegue(withIdentifier: "signupSegue", sender: self)
+    }
     @IBAction func sendCode(_ sender: Any) {
         let alert = UIAlertController(title: "Phone Number", message: "Is this your phone number? \n \(phoneNum.text!)", preferredStyle: .alert)
         
@@ -162,11 +167,13 @@ class SendCodeViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         var count:Int?
         if(tableView == tableOne){
             count = agreeOne.count
+            return count!
         }
-        if(tableView == tableTwo){
+        else{
             count = agreeTwo.count
+            return count!
         }
-        return count!
+        //return count!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -13,6 +13,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     var MenuNameArr:Array = [String]()
     var iconImage:Array = [UIImage]()
     
+    
     @IBOutlet weak var imgProfile: UIImageView!
     
     override func viewDidLoad() {
@@ -27,7 +28,11 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         imgProfile.layer.cornerRadius = 80
         imgProfile.layer.masksToBounds = false
         imgProfile.clipsToBounds = true
+        
+        
     }
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -44,6 +49,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     
         cell.imgIcon.image = iconImage[indexPath.row]
         cell.lblMenuName.text! = MenuNameArr[indexPath.row]
+        
         
         return cell
     }
