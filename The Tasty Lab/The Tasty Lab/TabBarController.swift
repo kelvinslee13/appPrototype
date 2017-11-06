@@ -10,7 +10,20 @@ import UIKit
 
 class TabBarController: UITabBarController {
 
+    @IBAction func cart_button(_ sender: Any) {
+        performSegue(withIdentifier: "cartSegue", sender: self)
+    }
     
+    @IBAction func filter_button(_ sender: Any) {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FilterViewController") as! FilterViewController
+        addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+        
+    }
+ 
+
     @IBOutlet weak var btnMenuButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()

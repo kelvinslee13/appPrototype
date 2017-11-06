@@ -1,17 +1,15 @@
 //
-//  SingleViewController.swift
+//  CartViewController.swift
 //  The Tasty Lab
 //
-//  Created by Seung hyun Lee on 9/18/17.
+//  Created by Seung hyun Lee on 11/6/17.
 //  Copyright © 2017 The Tasty Lab. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class SingleViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-    
-    var customView: UIView = UIView()
+class CartViewController: UIViewController,UITableViewDataSource, UITableViewDelegate{
     
     let foodImages = ["food_one","food_two","food_three","food_four"]
     let foodNames = ["Korean food 1", "Korean food 2", "Korean food 3", "Korean food 4"]
@@ -31,42 +29,23 @@ class SingleViewController: UIViewController, UITableViewDataSource, UITableView
         return cell
         
     }
+    @IBOutlet weak var totalPrice: UILabel!
+    
+    @IBAction func order_button(_ sender: Any) {
+        performSegue(withIdentifier: "paySegue", sender: self)
+    }
+    
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.addCustomView()
+        totalPrice.text = "총 합계 금액은 : 6,000원입니다."
+        totalPrice.textAlignment = .center
         
-
-        // Do any additional setup after loading the view.
     }
-    
-    
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func addCustomView(){
-        customView.frame = CGRect(x: view.frame.minX, y: view.frame.maxY-100, width: view.frame.maxX, height: 50)
-        customView.backgroundColor = UIColor.black
-
-        self.view.addSubview(customView)
-    
         
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
